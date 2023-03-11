@@ -1,9 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+// import Login from "./pages/login/Login";
+// import Register from "./pages/register/Register";
 
 function App() {
+
   return (
-    <div className="App">
-      start creating your Banking System application now...
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} ></Route>
+        {/* <Route path="/hotels" element={<List />} ></Route> */}
+        {/* <Route path="/hotels/:id" element={<Hotel />} ></Route>
+        <Route path="/login" element={<Login />} ></Route>
+        <Route path="/register" element={<Register />} ></Route> */}
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
